@@ -1,0 +1,324 @@
+2024-07-08T12:32:58.871+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Starting InventoryManagementSystemApplication using Java 17.0.9 with PID 17952 (C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem\target\classes started by balls in C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem)
+2024-07-08T12:32:58.888+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2024-07-08T12:32:59.011+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08T12:32:59.011+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08T12:33:00.884+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-08T12:33:01.050+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 6 JPA repository interfaces.
+2024-07-08T12:33:02.323+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-08T12:33:02.354+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-08T12:33:02.355+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-08T12:33:02.462+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-08T12:33:02.462+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3449 ms
+2024-07-08T12:33:02.782+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-08T12:33:02.910+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-08T12:33:02.988+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-08T12:33:03.596+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-08T12:33:03.649+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-08T12:33:04.833+08:00  WARN 17952 --- [InventoryManagementSystem] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.aclc.InventoryManagementSystem.InventoryManagementSystemApplication.main(InventoryManagementSystemApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.0.jar:3.3.0]
+
+2024-07-08T12:33:04.845+08:00 ERROR 17952 --- [InventoryManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2024-07-08T12:33:04.846+08:00  WARN 17952 --- [InventoryManagementSystem] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2024-07-08T12:33:04.854+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-07-08T12:33:04.875+08:00  INFO 17952 --- [InventoryManagementSystem] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-08T12:33:04.911+08:00 ERROR 17952 --- [InventoryManagementSystem] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.aclc.InventoryManagementSystem.InventoryManagementSystemApplication.main(InventoryManagementSystemApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.0.jar:3.3.0]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 20 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:152) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:362) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 35 common frames omitted
+
+2024-07-08T12:33:53.653+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Starting InventoryManagementSystemApplication using Java 17.0.9 with PID 8080 (C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem\target\classes started by balls in C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem)
+2024-07-08T12:33:53.659+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2024-07-08T12:33:53.778+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08T12:33:53.778+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08T12:33:55.334+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-08T12:33:55.488+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 6 JPA repository interfaces.
+2024-07-08T12:33:56.780+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-08T12:33:56.802+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-08T12:33:56.803+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-08T12:33:56.900+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-08T12:33:56.900+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3120 ms
+2024-07-08T12:33:57.213+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-08T12:33:57.341+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-08T12:33:57.411+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-08T12:33:57.930+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-08T12:33:57.972+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-08T12:33:58.239+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@544b19c2
+2024-07-08T12:33:58.243+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-08T12:33:58.348+08:00  WARN 8080 --- [InventoryManagementSystem] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-07-08T12:34:00.096+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-08T12:34:00.390+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-08T12:34:01.050+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-08T12:34:01.790+08:00  WARN 8080 --- [InventoryManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-08T12:34:02.481+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-08T12:34:02.540+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-08T12:34:02.555+08:00  INFO 8080 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Started InventoryManagementSystemApplication in 9.943 seconds (process running for 11.12)
+2024-07-08T12:34:17.510+08:00  INFO 8080 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-08T12:34:17.510+08:00  INFO 8080 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-08T12:34:17.512+08:00  INFO 8080 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-08T12:34:17.603+08:00  WARN 8080 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /index.html
+2024-07-08T12:34:17.617+08:00  WARN 8080 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No endpoint GET /index.html.
+2024-07-08T12:34:17.768+08:00  WARN 8080 --- [InventoryManagementSystem] [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2024-07-08T12:34:17.768+08:00  WARN 8080 --- [InventoryManagementSystem] [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2024-07-08T12:34:33.392+08:00  WARN 8080 --- [InventoryManagementSystem] [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2024-07-08T12:34:33.393+08:00  WARN 8080 --- [InventoryManagementSystem] [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No endpoint GET /.
+2024-07-08T12:37:18.518+08:00  INFO 8080 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-08T12:37:18.524+08:00  INFO 8080 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-08T12:37:18.535+08:00  INFO 8080 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-08T12:37:21.859+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Starting InventoryManagementSystemApplication using Java 17.0.9 with PID 12108 (C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem\target\classes started by balls in C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem)
+2024-07-08T12:37:21.863+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2024-07-08T12:37:21.960+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08T12:37:21.960+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08T12:37:23.151+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-08T12:37:23.294+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 6 JPA repository interfaces.
+2024-07-08T12:37:24.351+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-08T12:37:24.378+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-08T12:37:24.379+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-08T12:37:24.478+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-08T12:37:24.479+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2518 ms
+2024-07-08T12:37:24.751+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-08T12:37:24.844+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-08T12:37:24.905+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-08T12:37:25.445+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-08T12:37:25.504+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-08T12:37:25.760+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@614f4327
+2024-07-08T12:37:25.764+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-08T12:37:25.851+08:00  WARN 12108 --- [InventoryManagementSystem] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-07-08T12:37:27.368+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-08T12:37:27.571+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-08T12:37:28.156+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-08T12:37:28.791+08:00  WARN 12108 --- [InventoryManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-08T12:37:29.374+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-08T12:37:29.420+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-08T12:37:29.438+08:00  INFO 12108 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Started InventoryManagementSystemApplication in 8.423 seconds (process running for 9.399)
+2024-07-08T12:37:38.049+08:00  INFO 12108 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-08T12:37:38.049+08:00  INFO 12108 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-08T12:37:38.051+08:00  INFO 12108 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-08T12:38:35.129+08:00  WARN 12108 --- [InventoryManagementSystem] [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /manifest.json
+2024-07-08T12:38:35.132+08:00  WARN 12108 --- [InventoryManagementSystem] [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No endpoint GET /manifest.json.
+2024-07-08T12:38:41.636+08:00  WARN 12108 --- [InventoryManagementSystem] [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /manifest.json
+2024-07-08T12:38:41.637+08:00  WARN 12108 --- [InventoryManagementSystem] [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No endpoint GET /manifest.json.
+2024-07-08T12:44:53.727+08:00  INFO 12108 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-08T12:44:53.734+08:00  INFO 12108 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-08T12:44:53.747+08:00  INFO 12108 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-08T12:44:59.031+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Starting InventoryManagementSystemApplication using Java 17.0.9 with PID 5424 (C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem\target\classes started by balls in C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem)
+2024-07-08T12:44:59.039+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2024-07-08T12:44:59.144+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08T12:44:59.145+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08T12:45:00.497+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-08T12:45:00.652+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 6 JPA repository interfaces.
+2024-07-08T12:45:01.816+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-08T12:45:01.840+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-08T12:45:01.841+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-08T12:45:01.943+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-08T12:45:01.944+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2798 ms
+2024-07-08T12:45:02.252+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-08T12:45:02.355+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-08T12:45:02.414+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-08T12:45:02.981+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-08T12:45:03.028+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-08T12:45:03.329+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14c8797d
+2024-07-08T12:45:03.333+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-08T12:45:03.417+08:00  WARN 5424 --- [InventoryManagementSystem] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-07-08T12:45:05.021+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-08T12:45:05.242+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-08T12:45:06.048+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-08T12:45:06.909+08:00  WARN 5424 --- [InventoryManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-08T12:45:06.956+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-08T12:45:07.731+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-08T12:45:07.791+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-08T12:45:07.809+08:00  INFO 5424 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Started InventoryManagementSystemApplication in 9.69 seconds (process running for 10.848)
+2024-07-08T12:45:16.025+08:00  INFO 5424 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-08T12:45:16.025+08:00  INFO 5424 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-08T12:45:16.027+08:00  INFO 5424 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-08T13:50:34.654+08:00  INFO 5424 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-08T13:50:34.662+08:00  INFO 5424 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-08T13:50:34.666+08:00  INFO 5424 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-08T13:50:41.939+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Starting InventoryManagementSystemApplication using Java 17.0.9 with PID 13524 (C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem\target\classes started by balls in C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem)
+2024-07-08T13:50:41.944+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2024-07-08T13:50:42.031+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08T13:50:42.031+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08T13:50:43.566+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-08T13:50:43.711+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 6 JPA repository interfaces.
+2024-07-08T13:50:44.969+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-08T13:50:45.004+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-08T13:50:45.005+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-08T13:50:45.115+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-08T13:50:45.116+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3084 ms
+2024-07-08T13:50:45.501+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-08T13:50:45.622+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-08T13:50:45.703+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-08T13:50:46.330+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-08T13:50:46.386+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-08T13:50:46.664+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59ce6da8
+2024-07-08T13:50:46.667+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-08T13:50:46.761+08:00  WARN 13524 --- [InventoryManagementSystem] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-07-08T13:50:48.567+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-08T13:50:48.780+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-08T13:50:49.402+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-08T13:50:50.145+08:00  WARN 13524 --- [InventoryManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-08T13:50:50.195+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-08T13:50:50.946+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-08T13:50:51.009+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-08T13:50:51.028+08:00  INFO 13524 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Started InventoryManagementSystemApplication in 9.822 seconds (process running for 14.535)
+2024-07-08T13:50:56.793+08:00  INFO 13524 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-08T13:50:56.794+08:00  INFO 13524 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-08T13:50:56.795+08:00  INFO 13524 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-08T13:52:18.638+08:00  INFO 13524 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-08T13:52:18.644+08:00  INFO 13524 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-08T13:52:18.657+08:00  INFO 13524 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-08T13:52:22.521+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Starting InventoryManagementSystemApplication using Java 17.0.9 with PID 2632 (C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem\target\classes started by balls in C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem)
+2024-07-08T13:52:22.529+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2024-07-08T13:52:22.652+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08T13:52:22.653+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08T13:52:23.977+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-08T13:52:24.120+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 6 JPA repository interfaces.
+2024-07-08T13:52:25.224+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-08T13:52:25.250+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-08T13:52:25.251+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-08T13:52:25.349+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-08T13:52:25.350+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2695 ms
+2024-07-08T13:52:25.640+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-08T13:52:25.740+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-08T13:52:25.817+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-08T13:52:26.387+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-08T13:52:26.432+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-08T13:52:26.695+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79ada436
+2024-07-08T13:52:26.699+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-08T13:52:26.800+08:00  WARN 2632 --- [InventoryManagementSystem] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-07-08T13:52:28.513+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-08T13:52:28.715+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-08T13:52:29.449+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-08T13:52:30.220+08:00  WARN 2632 --- [InventoryManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-08T13:52:30.257+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-08T13:52:30.937+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-08T13:52:30.996+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-08T13:52:31.012+08:00  INFO 2632 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Started InventoryManagementSystemApplication in 9.546 seconds (process running for 10.803)
+2024-07-08T13:52:34.650+08:00  INFO 2632 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-08T13:52:34.650+08:00  INFO 2632 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-08T13:52:34.652+08:00  INFO 2632 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-08T14:09:07.527+08:00  INFO 2632 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-08T14:09:07.533+08:00  INFO 2632 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-08T14:09:07.544+08:00  INFO 2632 --- [InventoryManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-08T14:10:46.122+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Starting InventoryManagementSystemApplication using Java 17.0.9 with PID 18192 (C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem\target\classes started by balls in C:\Users\balls\Desktop\projects\InventoryManagementSystem\InventoryManagementSystem)
+2024-07-08T14:10:46.128+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2024-07-08T14:10:46.246+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08T14:10:46.247+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08T14:10:47.492+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-08T14:10:47.633+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 6 JPA repository interfaces.
+2024-07-08T14:10:48.836+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-08T14:10:48.863+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-08T14:10:48.863+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-08T14:10:48.960+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-08T14:10:48.960+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2712 ms
+2024-07-08T14:10:49.273+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-08T14:10:49.368+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-08T14:10:49.421+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-08T14:10:49.959+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-08T14:10:50.003+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-08T14:10:50.273+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39d53f01
+2024-07-08T14:10:50.278+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-08T14:10:50.365+08:00  WARN 18192 --- [InventoryManagementSystem] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-07-08T14:10:51.980+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-08T14:10:52.181+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-08T14:10:52.792+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-08T14:10:53.410+08:00  WARN 18192 --- [InventoryManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-08T14:10:53.445+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-08T14:10:54.042+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-08T14:10:54.091+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-08T14:10:54.107+08:00  INFO 18192 --- [InventoryManagementSystem] [restartedMain] a.I.InventoryManagementSystemApplication : Started InventoryManagementSystemApplication in 9.005 seconds (process running for 10.008)
+2024-07-08T14:11:05.852+08:00  INFO 18192 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-08T14:11:05.852+08:00  INFO 18192 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-08T14:11:05.854+08:00  INFO 18192 --- [InventoryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-08T15:39:50.102+08:00  WARN 18192 --- [InventoryManagementSystem] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47m59s125ms430µs600ns).

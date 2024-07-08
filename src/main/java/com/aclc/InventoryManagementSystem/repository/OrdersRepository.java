@@ -14,4 +14,5 @@ public interface OrdersRepository extends JpaRepository<Orders, Integer> {
     List<Orders> findByLastUpdatedBetweenAndStatus(@Param("startDateTime") LocalDateTime startDateTime,
                                                    @Param("endDateTime") LocalDateTime endDateTime,
                                                    @Param("status") String status);
+    List<Orders> findByLastUpdatedAfter(LocalDateTime date);
 }
