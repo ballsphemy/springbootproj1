@@ -5,4 +5,4 @@ RUN mvn clean package -DskipTests
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/InventoryManagementSystemApplication-0.0.1-SNAPSHOT.jar InventoryManagementSystemApplication.jar
 EXPOSE 8080
-ENTRYPOINT["java", "-jar","InventoryManagementSystemApplication.jar"]
+ENTRYPOINT ["java", "-jar", "InventoryManagementSystemApplication.jar"]
