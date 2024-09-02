@@ -45,6 +45,32 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.16.1</version>
+		</dependency>
+		<!-- Apache POI Core Library -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.3.0</version> <!-- Use the latest version if possible -->
+		</dependency>
+
+		<!-- Apache POI for Excel (.xlsx) -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.3.0</version> <!-- Use the latest version if possible -->
+		</dependency>
+
+		<!-- XML Beans dependency, required for .xlsx files -->
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>5.2.1</version> <!-- Use the latest version if possible -->
+		</dependency>
+
 	</dependencies>
 
 	<build>
