@@ -23,8 +23,10 @@ FROM openjdk:17.0.1-jdk-slim
 WORKDIR /app
 
 # Copy the jar file from the build stage
-COPY --from=build /app/target/InventoryManagementSystemApplication-0.0.1-SNAPSHOT.jar ./app.jar
+COPY --from=build /app/target/InventoryManagementSystem-0.0.1-SNAPSHOT.jar ./app.jar
 
+# Expose the port
 EXPOSE 8080
 
+# Run the jar file
 ENTRYPOINT ["java", "-jar", "app.jar"]
